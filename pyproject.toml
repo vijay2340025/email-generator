@@ -1,0 +1,27 @@
+[project]
+name = "email-generator"
+version = "1.0.0"
+description = "Email Generator"
+authors = [
+    {name = "Vijayvignesh G S",email = "vijay2340025@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0.0"
+dependencies = [
+    "langchain (>=1.5.2,<2.0.0)",
+    "streamlit (>=1.67.0,<2.0.0)",
+    "python-dotenv (>=1.2.4,<2.0.0)",
+    "langchain-google-genai (>=4.5.2,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "ruff (>=0.17.6,<0.18.0)",
+    "black (>=26.10.1,<27.0.0)",
+    "isort (>=9.0.2,<10.0.0)"
+]
