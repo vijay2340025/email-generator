@@ -12,6 +12,7 @@ def build_email_prompt(
         "Rules:\n"
         "- Output ONLY the email (start with 'Subject: ...' followed by the body).\n"
         "- Match the requested tone, recipient relationship, length, and language.\n"
+        "- Do not add outside facts or assumptions.\n"
         "- Use the provided key details accurately without providing any additional information."
     )
 

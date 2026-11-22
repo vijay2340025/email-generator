@@ -7,6 +7,8 @@ from prompt.email_prompt import build_email_prompt
 from generator.email_generator import Model
 
 def run_app():
+    st.set_page_config(page_title="Email Generator", layout="centered")
+
     with st.sidebar:
         st.markdown("### Model Settings: ")
         model_choice = st.selectbox("Choose a model", ["Gemini", "Custom"])
